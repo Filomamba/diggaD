@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { AppBar, Toolbar, Typography, Container, Card, CardContent, TextField, Button, List, ListItem, ListItemText, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -191,10 +191,12 @@ export default function App() {
           </Toolbar>
         </AppBar>
         <Container style={{ marginTop: 20 }}>
-          <Route exact path="/" component={MenuManager} />
-          <Route path="/analytics" component={Analytics} />
-          <Route path="/access" component={Access} />
-          <Route path="/support" component={Support} />
+          <Routes>
+            <Route path="/" element={<MenuManager />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/access" element={<Access />} />
+            <Route path="/support" element={<Support />} />
+          </Routes>
         </Container>
       </Router>
     </ThemeProvider>
