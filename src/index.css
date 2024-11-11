@@ -1,0 +1,51 @@
+/* index.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f5f1;
+}
+
+:root {
+  --pickle-green: #4CAF50;
+  --light-green: #A5D6A7;
+  --dark-green: #388E3C;
+  --white: #ffffff;
+}
+
+.navbar {
+  background-color: var(--pickle-green);
+  color: var(--white);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: var(--light-green);
+}
+
+.tile {
+  border-radius: 8px;
+  background-color: var(--light-green);
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  flex: 1;
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
