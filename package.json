@@ -2,7 +2,7 @@
   "name": "diggad",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "./public"
   "dependencies": {
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.6",
